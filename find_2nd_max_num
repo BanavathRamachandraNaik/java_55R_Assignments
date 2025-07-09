@@ -1,0 +1,18 @@
+public class Main {
+    public static void main(String[] args) {
+        int a = 20, b = 50, c = 40;
+        int second = 0;
+
+        if ((a > b && a < c) || (a > c && a < b)) {
+            second = a;
+        }
+        if ((b > a && b < c) || (b > c && b < a)) {
+            second = b;
+        }
+        if ((c > a && c < b) || (c > b && c < a)) {
+            second = c;
+        }
+
+        System.out.println("Second highest number is: " + second);
+    }
+}
